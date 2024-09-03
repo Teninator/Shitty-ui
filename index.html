@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shitty UI</title>
+    <style>
+        body {
+            background-color: lime; /* Bad contrast */
+            font-family: Comic Sans MS, cursive; /* Infamously disliked font */
+            background-image: url('https://via.placeholder.com/50'); /* Tiny image tiled */
+            background-repeat: repeat;
+            color: white;
+            cursor: url('https://via.placeholder.com/15'), auto; /* Custom cursor */
+        }
+        header {
+            background-color: red; /* Clashing color */
+            text-align: left; /* Misaligned text */
+            padding: 20px;
+        }
+        nav {
+            background-color: black;
+            color: gray;
+            font-size: 30px;
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            color: green;
+            text-decoration: none;
+            margin: 0 20px;
+        }
+        section {
+            margin: 50px;
+            padding: 30px;
+            border: 10px solid yellow; /* Thick and distracting border */
+            background-color: lightblue;
+        }
+        footer {
+            background-color: black;
+            color: white;
+            padding: 30px;
+            text-align: center;
+            margin-top: 50px;
+        }
+    </style>
+    <script>
+        alert("Welcome! This website is awful.");
+        setTimeout(() => {
+            alert("Still here? This site isn't getting any better.");
+        }, 3000);
+
+        document.addEventListener('mousemove', function(e) {
+            var trail = document.createElement('div');
+            trail.style.position = 'absolute';
+            trail.style.width = '10px';
+            trail.style.height = '10px';
+            trail.style.backgroundColor = 'red';
+            trail.style.top = e.pageY + 'px';
+            trail.style.left = e.pageX + 'px';
+            trail.style.pointerEvents = 'none';
+            document.body.appendChild(trail);
+            setTimeout(function() {
+                trail.remove();
+            }, 1000); /* Trail lasts for 1 second */
+        });
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Welcome to My Shitty Website</h1>
+    </header>
+
+    <nav>
+        <a href="#">Home</a> |
+        <a href="#">About</a> |
+        <a href="#">Contact</a> |
+        <a href="#">Portfolio</a>
+    </nav>
+
+    <marquee behavior="alternate" bgcolor="yellow" style="color: red; font-size: 24px;">
+        Welcome to the worst website ever!
+    </marquee>
+
+    <blink>
+        <p style="color: blue; font-size: 20px;">This text is blinking, and it's terrible!</p>
+    </blink>
+
+    <section>
+        <h2>This is a terrible section</h2>
+        <p>Everything is misaligned, colors are bad, and the font choice is horrible!</p>
+
+        <p style="color: green; font-size: 22px; padding: 10px; background-color: orange; border: 5px solid purple;">
+            This paragraph has way too much going on.
+        </p>
+
+        <button style="background-color: red; color: white; padding: 20px; border-radius: 10px; cursor: not-allowed;">
+            Don't click me!
+        </button>
+
+        <form style="background-color: beige; padding: 20px;">
+            <label for="name" style="color: brown;">Name:</label>
+            <input type="text" id="name" style="width: 300px; height: 50px; margin: 10px;">
+            <br><br>
+            <label for="email" style="color: green;">Email:</label>
+            <input type="email" id="email" style="width: 150px; height: 20px; margin: 10px;">
+            <br><br>
+            <input type="submit" value="Submit" style="background-color: pink; color: purple; padding: 20px;">
+        </form>
+
+        <img src="missing-image.jpg" alt="This image doesn't exist" style="width: 200px; height: 150px;">
+        <img src="https://via.placeholder.com/50" alt="Low-res image">
+
+        <h3 style="color: red;">Why This Website is Terrible</h3>
+        <ul style="color: purple; list-style-type: square;">
+            <li>Bad color scheme</li>
+            <li>Too many fonts</li>
+            <li>Annoying pop-ups</li>
+            <li>Unusable navigation</li>
+            <li>Broken images</li>
+            <li>Confusing forms</li>
+            <li>Unclickable buttons</li>
+            <li>Flashy animations</li>
+            <li>Misaligned elements</li>
+            <li>Cluttered footer</li>
+        </ul>
+
+        <h1 style="font-family: Impact, Charcoal, sans-serif; font-size: 60px; color: purple;">Huge Header</h1>
+        <p style="font-family: 'Courier New', Courier, monospace; font-size: 12px; color: yellow;">
+            This is a small, hard-to-read paragraph with a bad font.
+        </p>
+        <h2 style="font-family: Comic Sans MS, cursive; font-size: 50px; color: orange;">Another Awful Header</h2>
+        <p style="font-family: 'Times New Roman', Times, serif; font-size: 20px; color: green;">
+            This paragraph uses yet another font, making the design inconsistent and unpleasant.
+        </p>
+    </section>
+
+    <footer>
+        <p style="color: red; font-size: 20px;">Contact us at: notarealemail@example.com</p>
+        <p style="color: blue; font-size: 18px;">Follow us on MySpace, Orkut, and Friendster!</p>
+        <p style="color: yellow; font-size: 16px;">© 2024 Shitty UI. All Rights Reserved.</p>
+        <marquee behavior="scroll" direction="right" style="color: green;">This footer will drive you nuts!</marquee>
+    </footer>
+</body>
+</html>
