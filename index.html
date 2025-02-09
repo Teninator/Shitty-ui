@@ -7,7 +7,7 @@
     <style>
         body {
             background-color: lime; /* Bad contrast */
-            font-family: Comic Sans MS, cursive; /* Infamously disliked font */
+            font-family: Comic Sans MS, cursive; 
             background-image: url('https://via.placeholder.com/50'); /* Tiny image tiled */
             background-repeat: repeat;
             color: white;
@@ -62,14 +62,13 @@
             document.body.appendChild(trail);
             setTimeout(function() {
                 trail.remove();
-            }, 10000); /* Trail lasts for 1 second */
+            }, 10000); 
         });
     </script>
 </head>
 <body>
-    <audio controls autoplay>
-        <source src="music.mp3" type="audio/mpeg">
-      </audio>
+
+      <audio controls loop><source src="music.mp3" type="audio/mp3"></audio>
     <header>
         <h1>Welcome to My Shitty Website</h1>
     </header>
@@ -85,11 +84,12 @@
         Welcome to the worst website ever!
     </marquee>
 
-    <blink>
-        <p style="color: blue; font-size: 20px;">This text is blinking, and it's terrible!</p>
-    </blink>
+
+
+        <p style="color: blue; font-size: 20px;" >    <p id="blink"> This text is blinking, and it's terrible!</p>
 
     <section>
+        Make an account
         <h2>This is a terrible section</h2>
         <p>Everything is misaligned, colors are bad, and the font choice is horrible!</p>
 
